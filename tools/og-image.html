@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+  Template for the 1200x630 share images (assets/og.png and assets/og-snapshot.png).
+  Text comes from the URL: ?title=...&sub=...&kicker=...&url=...
+  To regenerate (needs Playwright: npx playwright install chromium), from the repo root:
+    npx playwright screenshot --viewport-size "1200, 630" "file://$PWD/tools/og-image.html" assets/og.png
+    npx playwright screenshot --viewport-size "1200, 630" "file://$PWD/tools/og-image.html?title=Free%20site%20snapshot.&sub=How%20you%20show%20up%20on%20Google%20and%20in%20AI%20answers%2C%20plus%20the%20three%20fixes%20to%20make%20first.&kicker=Free%20%C2%B7%20no%20call%20needed&url=waasg.com%2Fsnapshot" assets/og-snapshot.png
+  The published images were rendered with the Inter typeface; any clean sans-serif works.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>waa share image template</title>
+  <style>
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #090909; }
+    body {
+      position: relative;
+      font-family: Inter, "SF Pro Display", -apple-system, system-ui, sans-serif;
+      color: #f2f2f0;
+      background:
+        radial-gradient(circle at 80% 22%, rgba(255, 255, 255, 0.13), transparent 430px),
+        radial-gradient(circle at 0% 95%, rgba(255, 255, 255, 0.06), transparent 520px),
+        linear-gradient(135deg, #090909 0%, #111111 52%, #080808 100%);
+    }
+    .grid {
+      position: absolute; inset: 0; opacity: 0.35;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 78px 78px;
+      -webkit-mask-image: radial-gradient(circle at 62% 30%, #000, transparent 75%);
+    }
+    .orb {
+      position: absolute; right: -70px; top: 60px; width: 480px; height: 480px; border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: radial-gradient(circle at 42% 36%, rgba(255, 255, 255, 0.28), transparent 13%), radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 62%);
+      box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.08);
+    }
+    .orb::before, .orb::after { content: ""; position: absolute; inset: 9%; border: 1px solid rgba(255, 255, 255, 0.13); border-radius: 44% 56% 62% 38%; }
+    .orb::after { inset: 22%; border-radius: 61% 39% 42% 58%; transform: rotate(28deg); }
+    .wrap { position: absolute; inset: 60px 72px 54px; display: flex; flex-direction: column; }
+    .brand { display: flex; align-items: baseline; gap: 14px; font-size: 58px; font-weight: 800; line-height: 1; letter-spacing: -0.06em; }
+    .brand i { display: block; width: 58px; height: 2px; background: linear-gradient(90deg, #f2f2f0, transparent); opacity: 0.6; transform: translateY(-9px); }
+    h1 { margin: auto 0 0; max-width: 820px; font-size: 78px; line-height: 0.96; letter-spacing: -0.055em; font-weight: 800; }
+    p { margin: 22px 0 0; max-width: 780px; color: #b4b4ad; font-size: 29px; line-height: 1.35; letter-spacing: -0.02em; }
+    .foot { display: flex; justify-content: space-between; margin-top: 34px; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.12); color: #96968f; font-size: 23px; }
+    .foot b { color: #f2f2f0; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="brand">waa<i></i></div>
+    <h1 id="title">Get found on Google and in AI answers.</h1>
+    <p id="sub">AI marketing, SEO, GEO and automation.<br>Founder-led and based in Singapore.</p>
+    <div class="foot"><span id="kicker">Wu's Automation Agency</span><b id="url">waasg.com</b></div>
+  </div>
+  <script>
+    var q = new URLSearchParams(location.search);
+    ['title', 'sub', 'kicker', 'url'].forEach(function (key) { if (q.get(key)) document.getElementById(key).textContent = q.get(key); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "_readme": [
+    "THE ONE PLACE FOR PRICES AND PLAN DETAILS. Every price on the site, in the JSON-LD and in llms.txt comes from this file.",
+    "After editing, run:  node tools/build.mjs   (then commit the changed files). Check without writing:  node tools/build.mjs --check"
+  ],
+  "currency": "USD",
+  "currencySymbol": "US$",
+  "terms": "3-month minimum, then month to month with 30 days' notice.",
+  "billing": "Prices in US dollars, billed monthly in advance. If a paid tool is needed, you pay for it directly and only after you agree.",
+  "projects": "Websites, software, one-off automations and photography (Singapore only) are quoted per project, in writing, before any work starts.",
+  "snapshotTurnaround": "3 business days",
+
+  "foundingOffer": {
+    "enabled": true,
+    "_readme": "Set enabled to false and run node tools/build.mjs to remove the offer from every page.",
+    "spots": 3,
+    "discountPercent": 30,
+    "months": 3,
+    "ask": "a short, honest testimonial once we've worked together",
+    "disclosure": "The discount doesn't depend on what the testimonial says, and any testimonial I publish will say it came from a founding client who got the discount."
+  },
+
+  "plans": [
+    {
+      "id": "visibility",
+      "name": "Visibility",
+      "price": 600,
+      "tagline": "Get found on Google and in AI answers.",
+      "summary": "Monthly SEO and GEO for one location or one main service: technical fixes, Google Business Profile, schema, one new page a month and AI-answer tracking.",
+      "bestFor": "one location or one main service.",
+      "includes": [
+        "Monthly technical SEO check (indexing, speed, broken links, titles, schema) with fixes made directly where I have access, or a clear fix list where I don't",
+        "AI-answer tracking: 20 questions your customers ask, checked every month in ChatGPT, Perplexity and Google AI Overviews, showing who gets mentioned and cited",
+        "Google Business Profile kept accurate and active: hours, categories, services, photos and posts",
+        "Structured data (schema) and llms.txt set up and kept current",
+        "One new or improved page a month (service, location or FAQ) written for people, search engines and AI answers",
+        "Business name, address and phone kept consistent on the main directories",
+        "A plain-English monthly report: what I did, what changed, what's next"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "price": 1800,
+      "tagline": "Turn visibility into enquiries.",
+      "summary": "Everything in Visibility for up to 5 locations, plus four content pieces a month, conversion work, reviews, email follow-up and tracking you can read.",
+      "bestFor": "multi-location businesses, or one location ready to push for more enquiries.",
+      "includes": [
+        "Everything in Visibility, for up to 5 locations or service areas",
+        "Four content pieces a month (articles, location pages, comparison pages) built around real customer questions",
+        "Conversion work: landing pages, forms, calls to action and booking or ordering links, tested and improved",
+        "Review requests sent to all recent customers, plus drafted replies to every new review",
+        "Email follow-up for new leads, set up in the email tool you already use",
+        "Tracking you can read: Search Console, GA4, and call, form and booking conversions",
+        "A monthly call plus the written report"
+      ]
+    },
+    {
+      "id": "automation-partner",
+      "name": "Automation partner",
+      "price": 3500,
+      "tagline": "Take repetitive admin off your team.",
+      "summary": "Everything in Growth, plus a new automation every month, AI-drafted replies your team approves, small builds, and a weekly check-in.",
+      "bestFor": "multi-location operators and property managers with repetitive admin.",
+      "includes": [
+        "Everything in Growth",
+        "A new automation built every month and kept running: lead intake and routing, follow-ups, reporting, data cleanup or handoffs between your tools",
+        "AI-drafted replies and summaries for enquiries, reviews and admin, approved by your team before anything is sent",
+        "Works with the systems you already run, such as Buildium, AppFolio, POS or reservation tools, through their exports, built-in integrations or API where your plan allows",
+        "Small builds included: landing pages, internal dashboards, forms and simple tools",
+        "A weekly check-in, and replies within one business day"
+      ]
+    }
+  ]
+}

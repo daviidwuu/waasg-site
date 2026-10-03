@@ -1,0 +1,12 @@
+{
+  "name": "waa (Wu's Automation Agency)",
+  "short_name": "waa",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
