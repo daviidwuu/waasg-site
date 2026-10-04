@@ -1,0 +1,38 @@
+# waa (Wu's Automation Agency)
+
+> waa is a founder-led AI marketing, SEO, GEO and automation agency based in Singapore, run by David Wu. It helps businesses get found on Google and cited in AI answers (ChatGPT, Perplexity, Google AI Overviews), turns that visibility into enquiries, and automates the follow-up. It also builds websites and small software, and offers business photography in Singapore only. Clients can be anywhere; work outside Singapore is remote.
+
+Key facts:
+
+- Name: waa, always written in lowercase. Short for Wu's Automation Agency. Website: https://waasg.com
+- Based in Singapore. Work outside Singapore is done remotely. Photography: Singapore only.
+- Contact: david@waasg.com
+- Free offer: a site snapshot (how a business shows up on Google and in AI answers, site speed, structured data, ease of contact, and the three fixes to make first): https://waasg.com/snapshot
+- waa is new and has no published client case studies or testimonials yet.
+
+## Pricing
+
+<!-- gen:llms-plans -->
+<!-- /gen:llms-plans -->
+
+## Services
+
+- [AI SEO and GEO](https://waasg.com/ai-seo-geo): technical SEO, structured data, Google Business Profile and listings, pages that answer customer questions, monthly AI-answer tracking, crawler access and llms.txt.
+- [AI marketing and growth](https://waasg.com/growth): content built around real customer questions, landing pages and conversion work, review requests and replies, email follow-up, readable tracking.
+- [Automation](https://waasg.com/automation): lead capture, follow-ups, client replies, reporting and data cleanup using the tools a business already has. AI drafts, people approve.
+- [Websites and software](https://waasg.com/websites-software): fast, accessible websites with real HTML text and structured data; small internal tools and integrations. Quoted per project.
+- [Photography in Singapore](https://waasg.com/photography): food and menus, interiors and spaces, teams and headshots, brand photos. Quoted per shoot.
+
+## Who it's for
+
+- [Multi-location restaurants](https://waasg.com/restaurants): location pages, Google Business Profiles, readable menus, review replies, AI-answer tracking and enquiry automation.
+- [Property managers using Buildium or AppFolio](https://waasg.com/property-managers): owner-lead SEO and GEO, plus automations around reports, exports and integrations (owner updates, maintenance intake, leasing follow-ups). Not affiliated with Buildium or AppFolio.
+- [Singapore businesses](https://waasg.com/singapore): local SEO, Google Business Profile, AI-answer visibility, websites, automation and photography.
+
+## More
+
+- [Pricing](https://waasg.com/pricing)
+- [Free site snapshot](https://waasg.com/snapshot)
+- [About waa](https://waasg.com/about)
+- [FAQ](https://waasg.com/faq)
+- [All services](https://waasg.com/services)
