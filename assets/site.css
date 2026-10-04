@@ -617,6 +617,23 @@ main { display: block; }
   from { border-radius: 44% 56% 62% 38%; transform: rotate(0deg) scale(1); }
   to { border-radius: 61% 39% 42% 58%; transform: rotate(28deg) scale(1.06); }
 }
+/* Motion: the hero rises in on load, and sections and cards rise in as they scroll into view.
+   .js-motion is only set by menu.js when the browser supports it and motion is not reduced,
+   so without JavaScript everything is simply visible. */
+@keyframes rise {
+  from { opacity: 0; translate: 0 28px; }
+  to { opacity: 1; translate: 0 0; }
+}
+.hero-copy, .page-hero { animation: rise 900ms var(--ease) both 120ms; }
+.hero-visual { animation: rise 1000ms var(--ease) both 260ms; }
+.js-motion .reveal {
+  opacity: 0;
+  translate: 0 28px;
+  transition: opacity 800ms var(--ease), translate 800ms var(--ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.js-motion .reveal.in { opacity: 1; translate: 0 0; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
